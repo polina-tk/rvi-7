@@ -1,0 +1,567 @@
+:root {
+    --primary-blue: #7fa8cf;
+    --dark-grey-bg: #6c7a89;
+    --medium-grey-block: #8c9ba7;
+    --light-input-bg: #dbe4eb;
+    --dark-text: #333;
+    --white: #ffffff;
+    --accent-yellow: #f8e1a1;
+    --font-serif: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; 
+    color: #333;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #a8c7e6; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    background-color: #e0eaf1;
+}
+
+.nav-link.active {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 22px;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-left: 0;
+}
+
+.icon:hover {
+    color: #555;
+}
+
+
+.title-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 20px; 
+    text-align: center;
+    width: 100%;
+}
+
+.main-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: black;
+    line-height: 1.3;
+    max-width: 1000px; 
+    text-align: center;
+    margin: 0 auto; 
+    padding: 0 15px;
+    word-wrap: break-word;
+}
+
+.transfer-details-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.transfer-visuals {
+    flex: 1;
+    min-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: clamp(250px, 40vw, 400px); 
+    overflow: hidden;
+}
+
+.main-transfer-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: clamp(20px, 3vw, 30px);
+    color: #666;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.arrow:hover {
+    color: #333;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.left-arrow { 
+    left: 15px; 
+    transform: translateY(-50%);
+    top: 50%;
+}
+.right-arrow { 
+    right: 15px; 
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: clamp(120px, 20vw, 180px);
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.03);
+}
+
+.transfer-info-blocks {
+    flex: 1;
+    min-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-block {
+    background-color: #92A6BE; 
+    border-radius: 10px;
+    padding: clamp(20px, 4vw, 30px);
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.block-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.price-block {
+    height: fit-content;
+}
+
+.price-block .block-title {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    line-height: 1.2;
+    text-decoration: none; 
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin: 15px 0 25px;
+}
+
+.booking-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdd87e; 
+    color: #333;
+    text-decoration: none;
+    padding: clamp(12px, 3vw, 15px) clamp(20px, 4vw, 30px);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-button:hover {
+    background-color: #fbc02d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.calendar-icon {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    margin-right: 10px;
+}
+
+.advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: clamp(12px, 2vw, 15px);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.4;
+    gap: 12px;
+}
+
+.plane-icon {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #2c3e50; 
+    margin-top: 3px;
+    flex-shrink: 0;
+    transform: rotate(-45deg); 
+}
+
+.footer {
+    background-color: #a8c7e6;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.social-media {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+.social-icons .icon {
+    font-size: clamp(24px, 3vw, 30px);
+    color: #333;
+    margin: 0; 
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+}
+
+.contact-info {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+}
+
+.contact-item .icon {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: #333;
+    margin: 0;
+}
+
+.language-switcher {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+}
+
+@media (max-width: 1024px) {
+    .transfer-details-section {
+        padding: 20px 30px;
+        gap: 25px;
+    }
+    
+    .main-title {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .nav {
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .title-section {
+        padding: 30px 15px;
+    }
+    
+    .transfer-details-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .transfer-visuals, 
+    .transfer-info-blocks {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .main-image-container {
+        padding: 15px;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+    
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contact-info {
+        align-items: center;
+    }
+    
+    .social-icons {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 5px;
+    }
+    
+    .nav-link {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .header-icons {
+        gap: 20px;
+    }
+    
+    .title-section {
+        padding: 20px 10px;
+    }
+    
+    .main-title {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+    
+    .transfer-details-section {
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .main-image-container {
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .arrow {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+        font-size: 18px;
+    }
+    
+    .left-arrow { left: 8px; }
+    .right-arrow { right: 8px; }
+    
+    .thumbnail-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .thumbnail {
+        height: 150px;
+    }
+    
+    .info-block {
+        padding: 20px 15px;
+    }
+    
+    .block-title {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .price {
+        font-size: 1.8rem;
+        margin: 10px 0 20px;
+    }
+    
+    .booking-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .advantages-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .plane-icon {
+        align-self: flex-start;
+    }
+    
+    .footer {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .social-icons .icon {
+        font-size: 22px;
+    }
+    
+    .contact-item {
+        font-size: 0.9rem;
+    }
+}
