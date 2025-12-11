@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аэропорт "Восток"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="глвная.html" class="nav-link active">Главная</a>
+            <a href="Путеводитель.html" class="nav-link">Путеводитель</a>
+            <a href="Трансфер.html" class="nav-link">Трансфер</a>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search icon"></i>
+            <a href="Личный кабинет.html" title="Личный кабинет"><i class="fas fa-user icon"></i></a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="airport-title">Аэропорт “Восток”</h1>
+        
+        <section class="hero-section">
+            <div class="hero-text-container">
+                <div class="hero-text">
+                    <h2>Твое путешествие начинается здесь!</h2>
+                </div>
+            </div>
+            <img src="C:\Users\polin\OneDrive\Рабочий стол\главное фото.png" alt="Аэропорт" class="hero-image">
+        </section>
+
+        <div class="button-container">
+            <button class="flight-button">Вылет/прилет</button>
+        </div>
+
+        <div class="flights-table">
+            <div class="table-header">
+                <div class="table-cell">Номер рейса</div>
+                <div class="table-cell">Направление</div>
+                <div class="table-cell">Время</div>
+                <div class="table-cell">Статус</div>
+                <div class="table-cell">Терминал</div>
+                <div class="table-cell">Фактическое время</div>
+            </div>
+            <div class="table-row" data-label="Рейс 1">
+                <div class="table-cell" data-label="Номер рейса">SU 1234</div>
+                <div class="table-cell" data-label="Направление">Москва</div>
+                <div class="table-cell" data-label="Время">10:30</div>
+                <div class="table-cell" data-label="Статус">Регистрация</div>
+                <div class="table-cell" data-label="Терминал">A</div>
+                <div class="table-cell" data-label="Фактическое время">10:30</div>
+            </div>
+            <div class="table-row" data-label="Рейс 2">
+                <div class="table-cell" data-label="Номер рейса">FV 567</div>
+                <div class="table-cell" data-label="Направление">Сочи</div>
+                <div class="table-cell" data-label="Время">11:45</div>
+                <div class="table-cell" data-label="Статус">Вылетел</div>
+                <div class="table-cell" data-label="Терминал">B</div>
+                <div class="table-cell" data-label="Фактическое время">11:40</div>
+            </div>
+            <div class="table-row" data-label="Рейс 3">
+                <div class="table-cell" data-label="Номер рейса">DP 890</div>
+                <div class="table-cell" data-label="Направление">Казань</div>
+                <div class="table-cell" data-label="Время">13:00</div>
+                <div class="table-cell" data-label="Статус">Ожидание</div>
+                <div class="table-cell" data-label="Терминал">C</div>
+                <div class="table-cell" data-label="Фактическое время">13:00</div>
+            </div>
+            <div class="table-row" data-label="Рейс 4">
+                <div class="table-cell" data-label="Номер рейса">UT 112</div>
+                <div class="table-cell" data-label="Направление">Санкт-Петербург</div>
+                <div class="table-cell" data-label="Время">14:20</div>
+                <div class="table-cell" data-label="Статус">Задержан</div>
+                <div class="table-cell" data-label="Терминал">A</div>
+                <div class="table-cell" data-label="Фактическое время">15:00</div>
+            </div>
+        </div>
+
+        <section class="about-us">
+            <div class="about-us-header">
+                <a href="о нас.html" class="about-link"><h2>О нас</h2></a>
+            </div>
+            <div class="about-us-content">
+                <div class="about-item">
+                    <i class="fas fa-couch icon"></i>
+                    <h3>Комфорт</h3>
+                    <p>Дружелюбный и профессиональный персонал всегда готов помочь вам с любыми вопросами и потребностями, обеспечивая высокий уровень сервиса.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-shield-alt icon"></i> 
+                    <h3>Безопасность</h3>
+                    <p>Приоритет нашего аэропорта — это безопасность пассажиров. Современные системы контроля и профессиональный персонал обеспечивают высокий уровень защиты.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-wifi icon"></i> 
+                    <h3>Технологичность</h3>
+                    <p>В нашем аэропорту предлагаются кафе, рестораны, магазины Duty-Free, Wi-Fi и другие удобства, которые сделают ваше ожидание приятным.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="language-switcher">
+                <P>Русский | Английский</p>
+            </div>
+        </div>
+        
+        <div class="social-media">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-vk icon vk"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane icon tg"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-right">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt icon"></i>
+                    <span>8 (932) 564 76 98</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span>Улица Тигровая, 37</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
