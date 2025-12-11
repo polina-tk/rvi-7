@@ -1,0 +1,412 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.header {
+    background-color: #a8c7e6;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #e0eaf1;
+}
+
+.nav-link.active {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #555;
+}
+
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    background-image: url("C:/Users/polin/OneDrive/Рабочий стол/облако.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.welcome-text {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.advantages-section {
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.advantages-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.advantage-item {
+    background-color: #92A6BE;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.advantage-icon {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.advantage-item h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+.advantage-item p {
+    line-height: 1.6;
+    font-size: 1em;
+    color: black;
+}
+
+.transfer-options {
+    padding-bottom: 50px;
+}
+
+.transfer-options h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.transfer-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.transfer-card-link:hover .transfer-card {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.transfer-card {
+    background-color: #617186;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card-image-wrapper {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.transfer-image {
+    width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 5px;
+}
+
+.card-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-details h3 {
+    font-size: 1.6em;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #a8c7e6;
+}
+
+.type {
+    font-size: 1.1em;
+    margin: 0 0 15px 0;
+    opacity: 0.9;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    font-size: 0.95em;
+}
+
+.details-list li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.details-list li::before {
+    content: "✓";
+    margin-right: 8px;
+    color: #a8c7e6;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #a8c7e6;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-image: url("C:/Users/polin/OneDrive/Рабочий стол/облако.png");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.footer-left, .social-media, .footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.social-icons .icon {
+    font-size: 28px;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+    margin-left: 0;
+}
+
+.social-icons .icon:hover {
+    color: #617186;
+}
+
+.footer {
+    background-color: #a8c7e6;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.social-media {
+    flex: 1;
+    text-align: center; 
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.social-icons .icon {
+    font-size: 30px;
+    color: #333;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right; 
+}
+
+.contact-info {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item .icon {
+    font-size: 16px;
+    color: #333;
+}
+
+.language-switcher {
+    font-size: 0.9em;
+}
+
+.language-link {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .advantages-grid, .options-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .social-media, .footer-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-title {
+        font-size: 2.2em;
+    }
+
+    .advantages-grid, .options-grid {
+        grid-template-columns: 1fr;
+    }
+}
